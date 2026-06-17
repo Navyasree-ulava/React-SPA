@@ -9,8 +9,10 @@ export default function Navbar() {
 
         <nav className="nav-links">
           <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
+          <a href="#mission">Mission</a>
           <a href="#about">About</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#pricing">Pricing</a>
         </nav>
 
         <div className="nav-cta">

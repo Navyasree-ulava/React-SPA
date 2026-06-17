@@ -168,3 +168,28 @@ code {
   .cta-inner { flex-direction:column; text-align:center }
   .nav-inner { padding:12px 0 }
 }
+
+/* About section */
+.about { padding:48px 0 }
+.about-inner { display:flex; gap:28px; align-items:center; justify-content:space-between }
+.about-text { max-width:620px; text-align:left }
+.about-media .media-card { width:220px; height:140px; border-radius:12px; display:grid; place-items:center; font-size:40px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:white }
+
+/* Mission & Vision */
+.mission { padding:36px 0 }
+.mission-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px }
+.mission-card { background:var(--code-bg); padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(2,6,23,0.03) }
+
+/* Testimonials */
+.testimonials { padding:48px 0 }
+.testimonials h2 { margin-bottom:18px }
+.test-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:18px }
+.test-card { background:var(--bg); border:1px solid var(--border); padding:18px; border-radius:12px; box-shadow:0 6px 20px rgba(2,6,23,0.03) }
+.test-card p { margin:0 0 10px }
+.test-card footer { font-size:14px; color:var(--text) }
+
+@media (max-width: 768px) {
+  .about-inner { flex-direction:column-reverse; text-align:center }
+  .about-text { max-width:100% }
+  .mission-grid { grid-template-columns:1fr }
+}
